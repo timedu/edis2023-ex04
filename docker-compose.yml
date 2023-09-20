@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  
+  py:
+    image: edis-py:v4
+    build: .
+    volumes:
+      - ./:/home/edis
+    profiles:
+      - do-not-start-by-default
